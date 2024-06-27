@@ -1,87 +1,83 @@
 .navbar {
-    background-color: #6B8A7A !important; 
+  background-color: #6B8A7A !important;
 }
-
 .navbar .nav-link.active {
-    color: #fff; 
-    background-color: #4F665A; 
+  color: #fff;
+  background-color: #4F665A;
+}
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+  color: #fff;
+  background-color: #4F665A;
 }
 
 .hero-image {
-    position: relative;
-    text-align: center;
-    color: white;
+  position: relative;
+  text-align: center;
+  color: white;
 }
-
 .hero-image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+.hero-image .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-image .hero-text h1 {
+  color: #DAD3BE;
+  font-size: 3em;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.btn-custom, .btn-primary {
+  color: #fff;
+  background-color: #6B8A7A;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
-
-.hero-text h1 {
-    color: #DAD3BE;
-    font-size: 3em;
-}
-
-.btn-custom {
-    color: #fff;
-    background-color: #6B8A7A;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-custom:hover {
-    background-color: #254336;
-    color: #000;
+.btn-custom:hover, .btn-primary:hover {
+  background-color: #254336;
+  color: #000;
 }
 
 #conservacion, #cuidado {
-    background-color: #B7B597;
+  background-color: #B7B597;
 }
 
 #sostenibilidad {
-    background-color: #6B8A7A;
+  background-color: #6B8A7A;
 }
 
 .footer {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
-
-.footer h3 {
-    color: #ffffff;
-}
-
-.footer p {
-    color: #ffffff;
+.footer h3, .footer p {
+  color: #ffffff;
 }
 
 .footer-bottom {
-    background-color: #6B8A7A;
-    padding: 10px 0;
+  background-color: #6B8A7A;
+  padding: 10px 0;
 }
-
 .footer-bottom p {
-    color: #DAD3BE;
-    margin: 0;
+  color: #DAD3BE;
+  margin: 0;
 }
-
 
 .rounded-border {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .form-control:focus {
-    border-color: #6B8A7A;
-    box-shadow: 0 0 0 0.25rem rgba(107, 138, 122, 0.25);
+  border-color: #6B8A7A;
+  box-shadow: 0 0 0 0.25rem rgba(107, 138, 122, 0.25);
 }
+
+/*# sourceMappingURL=styles.css.map */

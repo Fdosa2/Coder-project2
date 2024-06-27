@@ -1,0 +1,109 @@
+// Variables
+$primary-color: #6B8A7A;
+$secondary-color: #4F665A;
+$hero-text-color: #DAD3BE;
+$btn-hover-bg: #254336;
+$light-bg: #B7B597;
+$footer-bg: #f8f9fa;
+$footer-text-color: #ffffff;
+$footer-bottom-bg: $primary-color;
+$footer-bottom-text-color: $hero-text-color;
+$form-focus-shadow: rgba(107, 138, 122, 0.25);
+
+// Navbar
+.navbar {
+    background-color: $primary-color !important;
+
+    .nav-link.active {
+        color: #fff;
+        background-color: $secondary-color;
+    }
+
+    .nav-link {
+        &:hover {
+            transform: scale(1.1); // Añade el efecto zoom
+            transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s; // Suaviza la transición
+            color: #fff;
+            background-color: $secondary-color;
+        }
+    }
+}
+
+// Hero Image
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h1 {
+            color: $hero-text-color;
+            font-size: 3em;
+        }
+    }
+}
+
+// Button Custom
+.btn-custom, .btn-primary {
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $btn-hover-bg;
+        color: #000;
+    }
+}
+
+// Sections
+#conservacion, #cuidado {
+    background-color: $light-bg;
+}
+
+#sostenibilidad {
+    background-color: $primary-color;
+}
+
+// Footer
+.footer {
+    background-color: $footer-bg;
+
+    h3, p {
+        color: $footer-text-color;
+    }
+}
+
+.footer-bottom {
+    background-color: $footer-bottom-bg;
+    padding: 10px 0;
+
+    p {
+        color: $footer-bottom-text-color;
+        margin: 0;
+    }
+}
+
+// Form Control
+.rounded-border {
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.25rem $form-focus-shadow;
+}
